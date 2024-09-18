@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "server/workboard_backend/wsgi.py",
+        "src": "workboard_backend/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server/workboard_backend/wsgi.py"
+            "dest": "workboard_backend/wsgi.py"
         }
     ]
 }
