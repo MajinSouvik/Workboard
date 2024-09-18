@@ -31,7 +31,7 @@ DEBUG=os.environ.get("DEBUG", "False").lower()=="true"
 # ALLOWED_HOSTS =['localhost']
 # ALLOWED_HOSTS =['*']
 
-ALLOWED_HOSTS =['.vercel.app']
+ALLOWED_HOSTS =['*']
 # Application definition
 
 INSTALLED_APPS = [
@@ -103,9 +103,9 @@ DATABASES = {
     }
 }
 
-# database_url=os.environ.get("DATABASE_URL")
+database_url=os.environ.get("DATABASE_URL")
 
-# DATABASES["default"]=dj_database_url.parse(database_url)
+DATABASES["default"]=dj_database_url.parse(database_url)
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
