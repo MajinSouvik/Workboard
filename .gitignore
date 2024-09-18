@@ -1,0 +1,10 @@
+server/menv
+client/node_modules
+
+# .gitignore
+
+server/menv/
+server/*.pyc
+server/__pycache__/
+server/node_modules/
+server/build/
