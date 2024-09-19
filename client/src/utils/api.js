@@ -13,19 +13,6 @@ const api = axios.create({
     },
 });
 
-// Add request interceptor to add access token to each request
-// api.interceptors.request.use(
-//     (config) => {
-//         const accessToken = getAccessToken(); // Get access token from the store
-//         if (accessToken) {
-//             config.headers.Authorization = `Bearer ${accessToken}`;
-//         }
-//         return config;
-//     },
-//     (error) => {
-//         return Promise.reject(error);
-//     }
-// );
 
 api.interceptors.request.use(
     (config) => {

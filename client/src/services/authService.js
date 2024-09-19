@@ -8,7 +8,7 @@ import axios from 'axios';
 // Register a new user
 export const registerUser = async (username, email, password) => {
   try {
-    const response = await api.post(API + "auth/register/", {
+    const response = await axios.post(API + "auth/register/", {
       username,
       email,
       password
